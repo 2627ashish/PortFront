@@ -15,7 +15,7 @@ class wallpaper extends React.Component {
         sessionStorage.setItem('locationId', locationid);//where locationId is the variable name and locationid is the vlaue
         axios({
             method: 'GET',
-            url: `http://localhost:2963/restraunts/${locationid}`,
+            url: `https://tomato-api-x20u.onrender.com/${locationid}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({ restraunts: response.data.Restraunts })

@@ -17,7 +17,7 @@ class Home extends React.Component {
         sessionStorage.clear();
         axios({
             method : 'GET',
-            url : 'http://localhost:2963/locations',
+            url : 'https://tomato-api-x20u.onrender.com/locations',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({locations : response.data.locations})
@@ -26,7 +26,7 @@ class Home extends React.Component {
 
         axios({
             method : 'GET',
-            url : 'http://localhost:2963/mealtypes',
+            url : 'https://tomato-api-x20u.onrender.com/mealtypes',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({mealtypes : response.data.Meals}) 

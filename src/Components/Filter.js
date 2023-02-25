@@ -31,7 +31,7 @@ class Filter extends React.Component {
         }
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/filter',
+            url: 'https://tomato-api-x20u.onrender.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterobj
         }).then(response => {
@@ -42,7 +42,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'GET',
-            url: 'http://localhost:2963/locations',
+            url: 'https://tomato-api-x20u.onrender.com/locations',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({ locations: response.data.locations })
@@ -64,7 +64,7 @@ class Filter extends React.Component {
         }
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/filter',
+            url: 'https://tomato-api-x20u.onrender.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterobj
         }).then(response => {
@@ -87,7 +87,7 @@ class Filter extends React.Component {
         }
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/filter',
+            url: 'https://tomato-api-x20u.onrender.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterobj
         }).then(response => {
@@ -110,7 +110,7 @@ class Filter extends React.Component {
         // https://agile-sea-01844.herokuapp.com
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/filter',
+            url: 'https://tomato-api-x20u.onrender.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterobj
         }).then(response => {
@@ -142,7 +142,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/filter',
+            url: 'https://tomato-api-x20u.onrender.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -167,7 +167,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/filter',
+            url: 'https://tomato-api-x20u.onrender.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
